@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root{
+    --primary-background-color : hsl(185, 75%, 39%);
+    --primary-font-color : hsl(229, 23%, 23%);
+    --secondary-font-color : hsl(227, 10%, 46%);
+}
+img{
+    width: 100%;
+}
+header{
+    background-color: var(--primary-background-color);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-size: 50%, 70%;
+    background-repeat: no-repeat;
+    background-position: 0% -150%, 150% -320%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    background-color: white;
+    width: 350px;
+    min-height: 372px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-info{
+    position: relative;
+}
+.card-profile-img{
+    position: absolute;
+    bottom: -28%;
+    right: 38%;
+
+}
+.card-profile-img{
+    width: 25%;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.card-content{
+    text-align: center;
+    margin-top: 3.5rem;
+    
+}
+.card-content-profile{
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 1.5rem;
+}
+.card-content-profile h1{
+    font-size: 1.2rem;
+    color: var(--primary-font-color);
+}
+.card-content-profile h1 span{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--secondary-font-color);
+}
+.card-content-profile p{
+    font-size: 1rem;
+    margin-top: .7rem;
+    font-weight: lighter;
+    color: var(--secondary-font-color);
+}
+.card-content-follower{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-number{
+    font-size: 1.2rem;
+    color: var(--primary-font-color);
+}
+.content-subject{
+    font-size: 1rem;
+    margin-top: .7rem;
+    font-weight: lighter;
+    color: var(--secondary-font-color);
+}
+@media only screen and (min-width:1440px){
+    header{
+        background-position: 0% -150%, 150% -320%;
+    }
+}
+@media only screen and (max-width:1280px){
+    header{
+        background-position: 0% -150px, 150% 400px;
+    }
+}
+@media only screen and (max-width:760px){
+    header{
+        background-size: 70%, 70%;
+        background-position: -180px -50px, 400px 400px;
+    }
+}
+@media only screen and (max-width:480px){
+    header{
+        background-size: 100%, 100%;
+        background-position: -200px -200px, 300px 500px;
+    }
+}
